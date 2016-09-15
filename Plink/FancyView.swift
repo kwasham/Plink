@@ -1,6 +1,6 @@
 //
 //  FancyView.swift
-//  Plink
+//  Plink!
 //
 //  Created by Kirk Washam on 9/15/16.
 //  Copyright © 2016 StudioATX. All rights reserved.
