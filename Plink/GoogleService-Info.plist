@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>589410099963-epvqaecgnqhddlvn4gq6m4os35i3f926.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.589410099963-epvqaecgnqhddlvn4gq6m4os35i3f926</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDTLjuocGdD6oCVz5Um7GuRkGKB5zbsPBA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>589410099963</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.studioatx.Plink</string>
+	<key>PROJECT_ID</key>
+	<string>plink-a35ee</string>
+	<key>STORAGE_BUCKET</key>
+	<string>plink-a35ee.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:589410099963:ios:d398cb0bf76193c1</string>
+	<key>DATABASE_URL</key>
+	<string>https://plink-a35ee.firebaseio.com</string>
+</dict>
+</plist>

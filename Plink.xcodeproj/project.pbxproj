@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1684CBDD1D8AF28100C81EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684CBDC1D8AF28100C81EAD /* AppDelegate.swift */; };
-		1684CBDF1D8AF28100C81EAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684CBDE1D8AF28100C81EAD /* ViewController.swift */; };
+		1684CBDF1D8AF28100C81EAD /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684CBDE1D8AF28100C81EAD /* SignInVC.swift */; };
 		1684CBE21D8AF28100C81EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1684CBE01D8AF28100C81EAD /* Main.storyboard */; };
 		1684CBE41D8AF28100C81EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1684CBE31D8AF28100C81EAD /* Assets.xcassets */; };
 		1684CBE71D8AF28100C81EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1684CBE51D8AF28100C81EAD /* LaunchScreen.storyboard */; };
+		1684CBF01D8AF4E300C81EAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1684CBEF1D8AF4E300C81EAD /* GoogleService-Info.plist */; };
+		A2F4ED983675C6598CC1EC60 /* Pods_Plink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E4F93F22EDA7139CED9927 /* Pods_Plink.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1684CBD91D8AF28100C81EAD /* Plink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1684CBDC1D8AF28100C81EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1684CBDE1D8AF28100C81EAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1684CBDE1D8AF28100C81EAD /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		1684CBE11D8AF28100C81EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1684CBE31D8AF28100C81EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1684CBE61D8AF28100C81EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1684CBE81D8AF28100C81EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1684CBEF1D8AF4E300C81EAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		65E4F93F22EDA7139CED9927 /* Pods_Plink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6A623534270C2436300835 /* Pods-Plink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plink/Pods-Plink.debug.xcconfig"; sourceTree = "<group>"; };
+		B288FC75A88B1E5E1CE66F95 /* Pods-Plink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plink.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plink/Pods-Plink.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,18 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F4ED983675C6598CC1EC60 /* Pods_Plink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		019D371BA29E9275205ABCBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65E4F93F22EDA7139CED9927 /* Pods_Plink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1684CBD01D8AF28000C81EAD = {
 			isa = PBXGroup;
 			children = (
-				1684CBEE1D8AF39A00C81EAD /* View */,
 				1684CBDB1D8AF28100C81EAD /* Plink */,
 				1684CBDA1D8AF28100C81EAD /* Products */,
+				F8067C62358A827E4E5E680D /* Pods */,
+				019D371BA29E9275205ABCBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,21 +71,48 @@
 		1684CBDB1D8AF28100C81EAD /* Plink */ = {
 			isa = PBXGroup;
 			children = (
+				16C85C9F1D8AFB57004C7908 /* Model */,
+				16C85CA11D8AFB6E004C7908 /* Controller */,
+				16C85CA01D8AFB63004C7908 /* View */,
 				1684CBDC1D8AF28100C81EAD /* AppDelegate.swift */,
-				1684CBDE1D8AF28100C81EAD /* ViewController.swift */,
 				1684CBE01D8AF28100C81EAD /* Main.storyboard */,
 				1684CBE31D8AF28100C81EAD /* Assets.xcassets */,
 				1684CBE51D8AF28100C81EAD /* LaunchScreen.storyboard */,
 				1684CBE81D8AF28100C81EAD /* Info.plist */,
+				1684CBEF1D8AF4E300C81EAD /* GoogleService-Info.plist */,
 			);
 			path = Plink;
 			sourceTree = "<group>";
 		};
-		1684CBEE1D8AF39A00C81EAD /* View */ = {
+		16C85C9F1D8AFB57004C7908 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		16C85CA01D8AFB63004C7908 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		16C85CA11D8AFB6E004C7908 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1684CBDE1D8AF28100C81EAD /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F8067C62358A827E4E5E680D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B6A623534270C2436300835 /* Pods-Plink.debug.xcconfig */,
+				B288FC75A88B1E5E1CE66F95 /* Pods-Plink.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1684CBEB1D8AF28100C81EAD /* Build configuration list for PBXNativeTarget "Plink" */;
 			buildPhases = (
+				9772AFAF40CE76D9617E8B03 /* [CP] Check Pods Manifest.lock */,
 				1684CBD51D8AF28100C81EAD /* Sources */,
 				1684CBD61D8AF28100C81EAD /* Frameworks */,
 				1684CBD71D8AF28100C81EAD /* Resources */,
+				776F1426FC8E80109FCE6DED /* [CP] Embed Pods Frameworks */,
+				FFBF902B0802CCF7EFD65B47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1684CBE71D8AF28100C81EAD /* LaunchScreen.storyboard in Resources */,
+				1684CBF01D8AF4E300C81EAD /* GoogleService-Info.plist in Resources */,
 				1684CBE41D8AF28100C81EAD /* Assets.xcassets in Resources */,
 				1684CBE21D8AF28100C81EAD /* Main.storyboard in Resources */,
 			);
@@ -140,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		776F1426FC8E80109FCE6DED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Plink/Pods-Plink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9772AFAF40CE76D9617E8B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBF902B0802CCF7EFD65B47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Plink/Pods-Plink-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1684CBD51D8AF28100C81EAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1684CBDF1D8AF28100C81EAD /* ViewController.swift in Sources */,
+				1684CBDF1D8AF28100C81EAD /* SignInVC.swift in Sources */,
 				1684CBDD1D8AF28100C81EAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +285,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -240,6 +336,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -267,6 +364,7 @@
 		};
 		1684CBEC1D8AF28100C81EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6A623534270C2436300835 /* Pods-Plink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8S8H54VKPE;
@@ -280,6 +378,7 @@
 		};
 		1684CBED1D8AF28100C81EAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B288FC75A88B1E5E1CE66F95 /* Pods-Plink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8S8H54VKPE;
@@ -310,6 +409,7 @@
 				1684CBED1D8AF28100C81EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
