@@ -13,6 +13,7 @@
 		1684CBE41D8AF28100C81EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1684CBE31D8AF28100C81EAD /* Assets.xcassets */; };
 		1684CBE71D8AF28100C81EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1684CBE51D8AF28100C81EAD /* LaunchScreen.storyboard */; };
 		1684CBF01D8AF4E300C81EAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1684CBEF1D8AF4E300C81EAD /* GoogleService-Info.plist */; };
+		16C85CA51D8B15F2004C7908 /* Yahoo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16C85CA41D8B1582004C7908 /* Yahoo.ttf */; };
 		A2F4ED983675C6598CC1EC60 /* Pods_Plink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E4F93F22EDA7139CED9927 /* Pods_Plink.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		1684CBE61D8AF28100C81EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1684CBE81D8AF28100C81EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1684CBEF1D8AF4E300C81EAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16C85CA41D8B1582004C7908 /* Yahoo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yahoo.ttf; sourceTree = "<group>"; };
 		65E4F93F22EDA7139CED9927 /* Pods_Plink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6A623534270C2436300835 /* Pods-Plink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plink/Pods-Plink.debug.xcconfig"; sourceTree = "<group>"; };
 		B288FC75A88B1E5E1CE66F95 /* Pods-Plink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plink.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plink/Pods-Plink.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 		1684CBDB1D8AF28100C81EAD /* Plink */ = {
 			isa = PBXGroup;
 			children = (
-				16C85CA21D8AFF4A004C7908 /* Tester */,
+				16C85CA31D8B156A004C7908 /* Resources */,
 				16C85C9F1D8AFB57004C7908 /* Model */,
 				16C85CA11D8AFB6E004C7908 /* Controller */,
 				16C85CA01D8AFB63004C7908 /* View */,
@@ -107,11 +109,12 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		16C85CA21D8AFF4A004C7908 /* Tester */ = {
+		16C85CA31D8B156A004C7908 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				16C85CA41D8B1582004C7908 /* Yahoo.ttf */,
 			);
-			name = Tester;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F8067C62358A827E4E5E680D /* Pods */ = {
@@ -186,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C85CA51D8B15F2004C7908 /* Yahoo.ttf in Resources */,
 				1684CBE71D8AF28100C81EAD /* LaunchScreen.storyboard in Resources */,
 				1684CBF01D8AF4E300C81EAD /* GoogleService-Info.plist in Resources */,
 				1684CBE41D8AF28100C81EAD /* Assets.xcassets in Resources */,
