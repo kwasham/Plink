@@ -37,6 +37,7 @@
 		16C85CAB1D8B2856004C7908 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		16C85CAF1D8B2D1F004C7908 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		16C85CB11D8B3464004C7908 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		16C85CB31D8B54AF004C7908 /* Plink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Plink.entitlements; sourceTree = "<group>"; };
 		65E4F93F22EDA7139CED9927 /* Pods_Plink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6A623534270C2436300835 /* Pods-Plink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plink/Pods-Plink.debug.xcconfig"; sourceTree = "<group>"; };
 		B288FC75A88B1E5E1CE66F95 /* Pods-Plink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plink.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plink/Pods-Plink.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		1684CBDB1D8AF28100C81EAD /* Plink */ = {
 			isa = PBXGroup;
 			children = (
+				16C85CB31D8B54AF004C7908 /* Plink.entitlements */,
 				16C85CA81D8B23EF004C7908 /* Utilities */,
 				16C85CA31D8B156A004C7908 /* Resources */,
 				16C85C9F1D8AFB57004C7908 /* Model */,
@@ -186,6 +188,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8S8H54VKPE;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -407,6 +414,7 @@
 			baseConfigurationReference = 9B6A623534270C2436300835 /* Pods-Plink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Plink/Plink.entitlements;
 				DEVELOPMENT_TEAM = 8S8H54VKPE;
 				INFOPLIST_FILE = Plink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -421,6 +429,7 @@
 			baseConfigurationReference = B288FC75A88B1E5E1CE66F95 /* Pods-Plink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Plink/Plink.entitlements;
 				DEVELOPMENT_TEAM = 8S8H54VKPE;
 				INFOPLIST_FILE = Plink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
