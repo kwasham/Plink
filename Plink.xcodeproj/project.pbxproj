@@ -71,6 +71,7 @@
 		1684CBDB1D8AF28100C81EAD /* Plink */ = {
 			isa = PBXGroup;
 			children = (
+				16C85CA21D8AFF4A004C7908 /* Test */,
 				16C85C9F1D8AFB57004C7908 /* Model */,
 				16C85CA11D8AFB6E004C7908 /* Controller */,
 				16C85CA01D8AFB63004C7908 /* View */,
@@ -104,6 +105,13 @@
 				1684CBDE1D8AF28100C81EAD /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		16C85CA21D8AFF4A004C7908 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 		F8067C62358A827E4E5E680D /* Pods */ = {
